@@ -24,9 +24,10 @@ namespace DrDanDongusBot
             _services = new ServiceCollection()
                 .AddSingleton(_client)
                 .AddSingleton(_commands)
+                .AddSingleton(new AudioService())
                 .BuildServiceProvider();
 
-            string botToken = "";
+            string botToken = "NjAwMDUxOTc3NDU5NTk3MzIy.XSuIJg.0eGVYDbcnGThkObU3iafd_6EH9Q";
 
             //event subscriptions
             _client.Log += Log;
