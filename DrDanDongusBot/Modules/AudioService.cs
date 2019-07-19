@@ -64,7 +64,6 @@ public class AudioService
         {
             //await Log(LogSeverity.Debug, $"Starting playback of {path} in {guild.Name}");
             Console.WriteLine($"Starting playback of {path} in {guild.Name}");
-            Console.Write("ConnectedChannels.TryGetValue");
             using (var ffmpeg = CreateProcess(path))
             using (var stream = client.CreatePCMStream(AudioApplication.Music))
             {

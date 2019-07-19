@@ -5,6 +5,7 @@ using Discord.WebSocket;
 using Discord.Commands;
 using Microsoft.Extensions.DependencyInjection;
 using Discord;
+using Discord.Audio;
 
 namespace DrDanDongusBot
 {
@@ -27,7 +28,7 @@ namespace DrDanDongusBot
                 .AddSingleton(new AudioService())
                 .BuildServiceProvider();
 
-            string botToken = "NjAwMDUxOTc3NDU5NTk3MzIy.XSuIJg.0eGVYDbcnGThkObU3iafd_6EH9Q";
+            string botToken = "";
 
             //event subscriptions
             _client.Log += Log;

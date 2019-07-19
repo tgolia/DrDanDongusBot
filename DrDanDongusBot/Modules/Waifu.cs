@@ -5,8 +5,10 @@ using System.Text;
 
 namespace DrDanDongusBot.Modules
 {
-    public class Waifu : ModuleBase<SocketCommandContext>
+    public class Waifu
     {
-
+        public string Property1 { get; set; }
+        public string Property2 { get; set; }
+        public string Property3 { get; set; }
     }
 }
